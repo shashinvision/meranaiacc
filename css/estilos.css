@@ -1,0 +1,102 @@
+body {
+    background-image: url("../img/bg.jpg");
+    /* fuente imagen metro https://www.pinterest.cl/pin/579275570799939455/ */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    width: 50%;
+    margin: 20px auto 20px auto;
+    background-color: rgb(238, 238, 238);
+    opacity: 0.97;
+    border-radius: 10px;
+    -webkit-box-shadow: -2px 0px 11px -2px rgba(161, 161, 161, 0.52);
+    -moz-box-shadow: -2px 0px 11px -2px rgba(161, 161, 161, 0.52);
+    box-shadow: -2px 0px 11px -2px rgba(161, 161, 161, 0.52);
+}
+
+.titulo {
+    float: left;
+    padding-right: 60px;
+}
+
+.logo {
+    border-radius: 5px;
+    width: 25%!important;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+    overflow: auto;
+}
+
+/* Pantallas de tipo tablets  */
+@media only screen and (min-width: 767px) and (max-width: 975px) {
+    .container {
+        width: 80%;
+        overflow: hidden;
+    }
+    .logo {
+        margin-bottom: 35px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        width: 80%!important;
+    }
+}
+
+/* Pantalla de tipo smartphone */
+@media only screen and (max-width: 766px) {
+    .container {
+        width: 95%;
+        overflow: hidden;
+    }
+    .logo {
+        margin-bottom: 30px;
+        display: block;
+        width: 80%!important;
+        margin-left: auto!important;
+        margin-right: auto!important;
+    }
+    .form-check {
+        margin-top: 20px!important;
+    }
+    input[type=checkbox], input[type=radio] {
+        /* Double-sized Checkboxes */
+        -ms-transform: scale(2);
+        /* IE */
+        -moz-transform: scale(2);
+        /* FF */
+        -webkit-transform: scale(2);
+        /* Safari and Chrome */
+        -o-transform: scale(2);
+        /* Opera */
+        transform: scale(2);
+        padding: 10px;
+    }
+    /* Might want to wrap a span around your checkbox text */
+    .checkboxtext {
+        /* Checkbox text */
+        font-size: 110%;
+    }
+    .form-check-inline {
+        font-size: 20px;
+        display: block!important;
+    }
+    .form-check-input {
+        padding: 50px!important;
+    }
+    .btn {
+        padding: 15px;
+        margin: 10px auto;
+        display: block;
+        width: 100%;
+    }
+    label{
+        margin-left: 10px!important;
+    }
+}
